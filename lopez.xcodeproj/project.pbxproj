@@ -13,6 +13,13 @@
 		1A5CF92B1E30E4150023948F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A5CF9291E30E4150023948F /* Main.storyboard */; };
 		1A5CF9361E30E4150023948F /* lopezTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5CF9351E30E4150023948F /* lopezTests.swift */; };
 		1A5CF9411E30E4150023948F /* lopezUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5CF9401E30E4150023948F /* lopezUITests.swift */; };
+		1A5CF9551E30E4540023948F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A5CF9541E30E4540023948F /* Cocoa.framework */; };
+		1A5CF95A1E30E4540023948F /* SafariExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5CF9591E30E4540023948F /* SafariExtensionHandler.swift */; };
+		1A5CF95C1E30E4540023948F /* SafariExtensionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5CF95B1E30E4540023948F /* SafariExtensionViewController.swift */; };
+		1A5CF95F1E30E4540023948F /* SafariExtensionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A5CF95D1E30E4540023948F /* SafariExtensionViewController.xib */; };
+		1A5CF9621E30E4540023948F /* script.js in Resources */ = {isa = PBXBuildFile; fileRef = 1A5CF9611E30E4540023948F /* script.js */; };
+		1A5CF9641E30E4540023948F /* ToolbarItemIcon.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1A5CF9631E30E4540023948F /* ToolbarItemIcon.pdf */; };
+		1A5CF9671E30E4540023948F /* lopez-safari.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 1A5CF9521E30E4540023948F /* lopez-safari.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,7 +37,28 @@
 			remoteGlobalIDString = 1A5CF91F1E30E4150023948F;
 			remoteInfo = lopez;
 		};
+		1A5CF9651E30E4540023948F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A5CF9181E30E4150023948F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1A5CF9511E30E4540023948F;
+			remoteInfo = "lopez-safari";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1A5CF96B1E30E4540023948F /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				1A5CF9671E30E4540023948F /* lopez-safari.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1A5CF9201E30E4150023948F /* lopez.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lopez.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -45,6 +73,15 @@
 		1A5CF93C1E30E4150023948F /* lopezUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = lopezUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A5CF9401E30E4150023948F /* lopezUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lopezUITests.swift; sourceTree = "<group>"; };
 		1A5CF9421E30E4150023948F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A5CF9521E30E4540023948F /* lopez-safari.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "lopez-safari.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A5CF9541E30E4540023948F /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		1A5CF9581E30E4540023948F /* lopez_safari.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = lopez_safari.entitlements; sourceTree = "<group>"; };
+		1A5CF9591E30E4540023948F /* SafariExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariExtensionHandler.swift; sourceTree = "<group>"; };
+		1A5CF95B1E30E4540023948F /* SafariExtensionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariExtensionViewController.swift; sourceTree = "<group>"; };
+		1A5CF95E1E30E4540023948F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/SafariExtensionViewController.xib; sourceTree = "<group>"; };
+		1A5CF9601E30E4540023948F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A5CF9611E30E4540023948F /* script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = script.js; sourceTree = "<group>"; };
+		1A5CF9631E30E4540023948F /* ToolbarItemIcon.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = ToolbarItemIcon.pdf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +106,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1A5CF94F1E30E4540023948F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A5CF9551E30E4540023948F /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -78,6 +123,8 @@
 				1A5CF9221E30E4150023948F /* lopez */,
 				1A5CF9341E30E4150023948F /* lopezTests */,
 				1A5CF93F1E30E4150023948F /* lopezUITests */,
+				1A5CF9561E30E4540023948F /* lopez-safari */,
+				1A5CF9531E30E4540023948F /* Frameworks */,
 				1A5CF9211E30E4150023948F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -88,6 +135,7 @@
 				1A5CF9201E30E4150023948F /* lopez.app */,
 				1A5CF9311E30E4150023948F /* lopezTests.xctest */,
 				1A5CF93C1E30E4150023948F /* lopezUITests.xctest */,
+				1A5CF9521E30E4540023948F /* lopez-safari.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -122,6 +170,36 @@
 			path = lopezUITests;
 			sourceTree = "<group>";
 		};
+		1A5CF9531E30E4540023948F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1A5CF9541E30E4540023948F /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1A5CF9561E30E4540023948F /* lopez-safari */ = {
+			isa = PBXGroup;
+			children = (
+				1A5CF9591E30E4540023948F /* SafariExtensionHandler.swift */,
+				1A5CF95B1E30E4540023948F /* SafariExtensionViewController.swift */,
+				1A5CF95D1E30E4540023948F /* SafariExtensionViewController.xib */,
+				1A5CF9601E30E4540023948F /* Info.plist */,
+				1A5CF9611E30E4540023948F /* script.js */,
+				1A5CF9631E30E4540023948F /* ToolbarItemIcon.pdf */,
+				1A5CF9571E30E4540023948F /* Supporting Files */,
+			);
+			path = "lopez-safari";
+			sourceTree = "<group>";
+		};
+		1A5CF9571E30E4540023948F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1A5CF9581E30E4540023948F /* lopez_safari.entitlements */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,10 +210,12 @@
 				1A5CF91C1E30E4150023948F /* Sources */,
 				1A5CF91D1E30E4150023948F /* Frameworks */,
 				1A5CF91E1E30E4150023948F /* Resources */,
+				1A5CF96B1E30E4540023948F /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				1A5CF9661E30E4540023948F /* PBXTargetDependency */,
 			);
 			name = lopez;
 			productName = lopez;
@@ -178,6 +258,23 @@
 			productReference = 1A5CF93C1E30E4150023948F /* lopezUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		1A5CF9511E30E4540023948F /* lopez-safari */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A5CF9681E30E4540023948F /* Build configuration list for PBXNativeTarget "lopez-safari" */;
+			buildPhases = (
+				1A5CF94E1E30E4540023948F /* Sources */,
+				1A5CF94F1E30E4540023948F /* Frameworks */,
+				1A5CF9501E30E4540023948F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "lopez-safari";
+			productName = "lopez-safari";
+			productReference = 1A5CF9521E30E4540023948F /* lopez-safari.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -202,6 +299,10 @@
 						ProvisioningStyle = Automatic;
 						TestTargetID = 1A5CF91F1E30E4150023948F;
 					};
+					1A5CF9511E30E4540023948F = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = 1A5CF91B1E30E4150023948F /* Build configuration list for PBXProject "lopez" */;
@@ -220,6 +321,7 @@
 				1A5CF91F1E30E4150023948F /* lopez */,
 				1A5CF9301E30E4150023948F /* lopezTests */,
 				1A5CF93B1E30E4150023948F /* lopezUITests */,
+				1A5CF9511E30E4540023948F /* lopez-safari */,
 			);
 		};
 /* End PBXProject section */
@@ -245,6 +347,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A5CF9501E30E4540023948F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A5CF9641E30E4540023948F /* ToolbarItemIcon.pdf in Resources */,
+				1A5CF95F1E30E4540023948F /* SafariExtensionViewController.xib in Resources */,
+				1A5CF9621E30E4540023948F /* script.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,6 +388,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1A5CF94E1E30E4540023948F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A5CF95C1E30E4540023948F /* SafariExtensionViewController.swift in Sources */,
+				1A5CF95A1E30E4540023948F /* SafariExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -289,6 +410,11 @@
 			target = 1A5CF91F1E30E4150023948F /* lopez */;
 			targetProxy = 1A5CF93D1E30E4150023948F /* PBXContainerItemProxy */;
 		};
+		1A5CF9661E30E4540023948F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1A5CF9511E30E4540023948F /* lopez-safari */;
+			targetProxy = 1A5CF9651E30E4540023948F /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -298,6 +424,14 @@
 				1A5CF92A1E30E4150023948F /* Base */,
 			);
 			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1A5CF95D1E30E4540023948F /* SafariExtensionViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1A5CF95E1E30E4540023948F /* Base */,
+			);
+			name = SafariExtensionViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -396,6 +530,7 @@
 		1A5CF9461E30E4150023948F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = lopez/Info.plist;
@@ -409,6 +544,7 @@
 		1A5CF9471E30E4150023948F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = lopez/Info.plist;
@@ -477,6 +613,32 @@
 			};
 			name = Release;
 		};
+		1A5CF9691E30E4540023948F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "lopez-safari/lopez_safari.entitlements";
+				INFOPLIST_FILE = "lopez-safari/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.github.ohataken.lopez.lopez-safari";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		1A5CF96A1E30E4540023948F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "lopez-safari/lopez_safari.entitlements";
+				INFOPLIST_FILE = "lopez-safari/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.github.ohataken.lopez.lopez-safari";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -510,6 +672,14 @@
 			buildConfigurations = (
 				1A5CF94C1E30E4150023948F /* Debug */,
 				1A5CF94D1E30E4150023948F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1A5CF9681E30E4540023948F /* Build configuration list for PBXNativeTarget "lopez-safari" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A5CF9691E30E4540023948F /* Debug */,
+				1A5CF96A1E30E4540023948F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
