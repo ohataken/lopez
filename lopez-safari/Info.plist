@@ -35,6 +35,15 @@
 				<string>script.js</string>
 			</dict>
 		</array>
+		<key>SFSafariContextMenu</key>
+		<array>
+			<dict>
+				<key>Text</key>
+				<string>Make link (Markdown)</string>
+				<key>Command</key>
+				<string>Markdown</string>
+			</dict>
+		</array>
 		<key>SFSafariToolbarItem</key>
 		<dict>
 			<key>Action</key>
