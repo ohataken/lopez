@@ -30,5 +30,14 @@ class SafariExtensionHandler: SFSafariExtensionHandler {
     override func popoverViewController() -> SFSafariExtensionViewController {
         return SafariExtensionViewController.shared
     }
+    
+    override func contextMenuItemSelected(withCommand command: String, in page: SFSafariPage, userInfo: [String : Any]? = nil) {
+        switch command {
+            case "Markdown":
+                NSLog("Markdown")
+            default:
+                NSLog("default")
+        }
+    }
 
 }
